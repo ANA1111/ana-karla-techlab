@@ -9,3 +9,34 @@
 
 /* Hero portrait: image is intentionally a separate asset */
 .home-hero{min-height:660px;padding-right:43%;overflow:visible}.home-hero h1{font-size:clamp(40px,5vw,66px)}.home-hero p{max-width:610px}.hero-portrait{position:absolute;right:-25px;top:45px;width:44%;height:580px;pointer-events:none;isolation:isolate}.portrait-glow{position:absolute;inset:14% -8% 10%;background:radial-gradient(ellipse,#16d6c65c,transparent 68%);filter:blur(25px);z-index:-2}.portrait-frame{position:absolute;inset:19% 7% 11%;border:3px solid #41eee3;border-radius:28px;transform:skewY(-7deg);box-shadow:0 0 25px #16e9d5aa,inset 0 0 32px #16e9d533;z-index:-1}.hero-portrait img{position:absolute;inset:0;width:100%;height:100%;object-fit:contain;object-position:center bottom;filter:drop-shadow(0 18px 25px #03101d)}.portrait-code{position:absolute;left:0;top:17%;border:1px solid #49ead7;background:#0b2739e8;color:#4ae7d7;border-radius:18px;padding:12px 18px;font-size:28px;font-weight:800;box-shadow:0 0 30px #17d5b344}.portrait-spark{position:absolute;right:4%;top:8%;font-size:35px;color:#4ae7d7}.portrait-base{position:absolute;left:4%;right:4%;bottom:7%;height:16px;border-radius:50%;background:#3de9d7;filter:blur(11px);z-index:-1}@media(max-width:900px){.home-hero{padding-right:35%}.hero-portrait{right:-10px;width:37%;height:450px;top:100px}.portrait-code{font-size:20px}}@media(max-width:700px){.home-hero{padding-right:0;padding-top:55px}.hero-portrait{position:relative;right:auto;top:auto;width:min(100%,380px);height:400px;margin:20px auto -35px}.home-hero h1{font-size:clamp(38px,10vw,56px)}.portrait-frame{inset:18% 12% 12%}}
+
+/* Refined editorial direction — restrained, human, accessible */
+:root{color:#eaf2f3;background:#0d2430}
+body{background:#0d2430}
+header{background:#102b36f5;border-bottom:1px solid #2c5260}
+.home-hero{min-height:610px;padding-top:105px;padding-bottom:85px;padding-right:46%;overflow:hidden;background:radial-gradient(ellipse at 70% 70%,#087e7440,transparent 56%)}
+.home-hero .eyebrow{font-size:13px;letter-spacing:1.2px;color:#45d6c2}
+.home-hero .hero-kicker{font-size:15px;letter-spacing:.5px;color:#d3e5e9;font-weight:600}
+.home-hero h1{font-size:clamp(39px,4.6vw,64px);letter-spacing:-2px;line-height:1.12}
+.home-hero h1 em{color:#46dec9}
+.home-hero p{font-size:17px;line-height:1.7;color:#d0e1e7}
+.home-hero .chips{margin-top:28px}
+.home-hero .chips span{background:#153946;border-color:#2d6a70}
+.hero-portrait{right:0;top:45px;width:43%;height:560px}
+.portrait-glow{inset:12% 0 5%;background:radial-gradient(ellipse,#21b5a735,transparent 70%);filter:blur(40px)}
+.portrait-frame{inset:10% 0 4%;border:0;border-radius:42% 0 0 36%;transform:none;background:linear-gradient(130deg,#1f9d91 0%,#164552 35%,#143541 100%);box-shadow:none;z-index:-2}
+.hero-portrait img{object-fit:cover;object-position:center 22%;border-radius:42% 0 0 36%;mask-image:linear-gradient(to bottom,#000 0%,#000 80%,transparent 100%);filter:none}
+.portrait-base{display:none}
+.home-section:first-of-type{background:#f6f8f7;color:#102b37}
+.home-section h2{letter-spacing:-1.3px}
+.home-section .solution-card{background:#f5faf8;border:1px solid #c8dbdc;color:#14333c;box-shadow:0 8px 20px #071c2510;min-height:290px}
+.home-section .solution-card p{color:#45616b}
+.home-section .solution-card strong{color:#087c74}
+.home-section .solution-symbol{color:#0b857c}
+.home-section .solution-card:hover{transform:translateY(-3px);border-color:#0d9389}
+.home-section .solution-card .tag{color:#166e68;background:#e0f5ed;border-color:#a8d5cb}
+.home-section .solution-card h3{color:#102b37}
+.home-section .solution-grid{gap:18px}
+.button{background:#21d5be;border-color:#21d5be}
+@media(max-width:900px){.home-hero{padding-right:39%}.hero-portrait{width:38%;height:470px;top:100px}}
+@media(max-width:700px){.home-hero{padding:62px 0 35px;min-height:auto}.hero-portrait{position:relative;width:100%;max-width:390px;height:390px;top:auto;right:auto;margin:25px auto -20px}.portrait-frame,.hero-portrait img{border-radius:36% 36% 18% 18%}.home-hero h1{font-size:clamp(37px,9vw,52px)}}
