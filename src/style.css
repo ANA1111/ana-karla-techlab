@@ -40,3 +40,11 @@ header{background:#102b36f5;border-bottom:1px solid #2c5260}
 .button{background:#21d5be;border-color:#21d5be}
 @media(max-width:900px){.home-hero{padding-right:39%}.hero-portrait{width:38%;height:470px;top:100px}}
 @media(max-width:700px){.home-hero{padding:62px 0 35px;min-height:auto}.hero-portrait{position:relative;width:100%;max-width:390px;height:390px;top:auto;right:auto;margin:25px auto -20px}.portrait-frame,.hero-portrait img{border-radius:36% 36% 18% 18%}.home-hero h1{font-size:clamp(37px,9vw,52px)}}
+
+/* Iteration 2: readable tools and portrait fallback */
+.portrait-fallback{position:absolute;inset:0;display:grid;place-items:center;font-size:clamp(90px,13vw,180px);font-weight:800;letter-spacing:-.08em;color:#c8fff1;background:linear-gradient(150deg,#267c7a,#143945);border-radius:42% 0 0 36%;z-index:-1}
+.hero-portrait:has(img:not([style*="display: none"])) .portrait-fallback{display:none}
+.metrics{grid-template-columns:repeat(4,minmax(0,1fr))}
+.memory-tile:disabled{opacity:1;cursor:default}
+.memory-tile[aria-pressed="true"]{border-color:#5be6cc}
+@media(max-width:580px){.metrics{grid-template-columns:repeat(2,minmax(0,1fr))}.portrait-fallback{border-radius:36% 36% 18% 18%}}
